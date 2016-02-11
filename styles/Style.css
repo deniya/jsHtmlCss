@@ -1,0 +1,231 @@
+*{
+	transition: all .5s;
+	box-sizing: border-box;
+}
+
+body {
+	font: 1em 'PT Sans',Arial,Helvetica,sans-serif;
+	background: url(http://wallbox.ru/wallpapers/main/201121/26bc7624c8b3d125a5d9fa820d4d7fcb.jpg) top left; 
+	color: #333;
+	background-repeat: repeat;
+	margin: 0;
+	background-size: cover;
+	overflow: visible;
+}
+
+.container{
+	width: 941px;
+	/*width: 90%;*/
+	height: auto;
+	margin: 0 auto;
+	margin-bottom:0;
+}
+
+/* CSS
+=================================*/
+.row {
+	margin-bottom: 20px;
+}
+
+/*Чтобы слой с .row содержал все свои элементы, в конец (:after) ставим скрытую точку*/
+.row:after{
+	display: block;
+	content: '.';
+	height: 0;
+	visibility: hidden;
+	clear:both;		/*отменяет float в span*/
+}
+
+/*Правило ([]) для всех элементов, которые содержат в названии класса слово 'span'*/
+[class *= "span"]{
+	float: left;
+	display: inline;
+	margin-right: 20px;
+}
+
+/*Правило для последнего span-a, самого правого в строке .row*/
+[class *= "span"]:last-child{
+	margin-right: 0;
+	float: right;
+}
+
+/*Ширина ячеек сетки*/
+.span1{width: 60px}
+.span2{width: 140px}
+.span3{width: 220px}
+.span4{width: 300px}
+.span5{width: 380px}
+.span6{width: 460px}
+.span7{width: 540px}
+.span8{width: 620px}
+.span9{width: 700px}
+.span10{width: 780px}
+.span11{width: 860px}
+.span12{width: 940px}
+/*Отступы слева ячеек сетки*/
+.offset1{margin-left: 60px}
+.offset2{margin-left: 140px}
+.offset3{margin-left: 220px}
+.offset4{margin-left: 300px}
+.offset5{margin-left: 380px}
+.offset6{margin-left: 460px}
+.offset7{margin-left: 540px}
+.offset8{margin-left: 620px}
+.offset9{margin-left: 700px}
+.offset10{margin-left: 780px}
+.offset11{margin-left: 860px}
+.offset12{margin-left: 940px}
+
+/* MAIN
+========================*/
+
+header{
+	margin-top: 20px;
+	color: #333;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px black, 0 0 1em maroon,
+					 0px -5px 35px white, 0 0 1em violet;
+}
+
+.search{
+	margin-top: 80px;
+
+}
+
+.search input{
+	width: 100%;
+	height: 30px;
+}
+
+button{
+	margin-left:800px;
+	float:right;
+	position:relative;
+	background:purple;
+	float:right;
+	width: 500px;
+	height: 300px;
+}
+.slider{
+	height: 220px;
+	background: url(http://36.media.tumblr.com/a5a1f6667ea28d771b3e0968dd674c22/tumblr_mtahyupeYG1sijkz7o1_1280.jpg);		/*http://ucelgroup.com/menu-urun/zemin/beefloor-urunleri/b2/301%20800.png*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-size: auto;*/
+	box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.thumb img{
+	box-shadow: 0 30px 30px rgba(0,0,0,.2);
+}
+
+	
+/*.sidebar{     
+	padding: 0;     
+	margin: 0;     
+	box-shadow: 0 0px 13px rgba(0,0,0,.2);
+	margin-top:0; 
+}*/
+
+.sidebar nav ul{
+	padding: 0;
+	margin-bottom: 12px;
+	box-shadow: 0 0px 13px rgba(0,0,0,.2);
+	list-style: none;
+}
+
+.sidebar nav ul li a{
+	text-decoration: none;
+	color:#6495ED;
+	background: #2F4F4F;
+	display: block;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin-bottom: 1px;
+	}
+
+
+.sidebar nav ul li a:hover{
+	background: #aaa;
+	}
+#back-to{
+	width: 200px;
+	height: 40px;
+	text-decoration: underline;
+	background:white;
+	margin-bottom: 1px;
+	}
+.content{
+	color:white;
+	padding: 0 50px;
+	margin-bottom: 0px;
+	}
+
+p{
+	text-align: justify;
+	}
+
+h2 .abs{
+	color:white;
+	padding: 0 100px;
+	margin-bottom: 50px;
+	font-weight: bold;
+	}
+
+.footer{
+	color: #FFFFF0;
+	text-align: center;
+	border-top:1px dashed #FF6347;
+	padding: 10px 0;
+	margin: auto -200px;
+	font-style: italic;
+	}
+
+tr{
+	height: 200px;
+	width: 150px;
+	padding: 0 100px;
+	}
+
+
+b{
+	color: #66ffcc;
+	text-decoration: underline;
+	text-shadow: 1px 1px 1px blue, 0 0 1em maroon;
+	}
+
+table{
+	/*overflow:hidden;*/
+	/*float:none;*/
+	width: auto;
+	height: 240px;
+	/*display:block-inline;*/
+/*	margin-left:-70px;*/
+	/*position:absolute;*/
+	margin:auto auto -100px auto auto ;
+	
+	}
+
+#back-to{
+	background:white;
+	width: 200px;
+	height: 40px;
+	}
+
+.back-to{
+	background:white;
+	width: 200px;
+	height: 40px;
+
+	}
+
+
+img{
+/*	style.left = (parent.offsetWidth - this.offsetWidth ) / 2 + 'px'
+*/
+	display:absolute:
+	left:-110px;
+
+}

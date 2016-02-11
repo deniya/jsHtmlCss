@@ -1,0 +1,108 @@
+body{
+	background-color: white;
+}
+.container{
+	margin-top: 10px;
+}
+.container #1cont{
+	margin-top:40px;
+}
+
+.form{
+	margin-top: 30px;
+	height: 50px;
+	font-size: 28px;
+}
+
+table {
+	margin-top:10px;
+    width: 100%;
+    border: 4px double black;
+    border-collapse: collapse;
+    border-bottom: none;
+    border-left-style: dotted;
+    border-right-style: dotted;
+   }
+
+h4{
+	margin-bottom: 10px;
+}
+
+td {
+	
+	width: auto;
+	height:50px;
+    padding: 7px;
+    border: 1px black;
+   }
+
+thead{
+	border: 4px black;
+}
+
+th {
+	
+	width: auto;
+	/*max-width: 10px;*/
+	text-align: center;
+    background: #ccc;
+    padding: 5px;
+    border: 2px black;
+}
+
+#ids{
+	width: 10px;
+}
+
+.tableContent{
+	margin-top: 0px;
+	border: 4px black;
+	border-top:none;
+	;
+}
+#contentFull{
+	
+	border:4px double black;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+#contentCSS{
+	overflow:hidden;
+/*	display:inline-block;*/
+	width: 936px;
+	height: 170px;
+	color:#10bae7;
+	background-color: #ffffdb;
+	text-align:justify;
+	padding: 10px;
+
+
+}
+
+/*
+#calendar4 {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar4 thead tr:last-child {
+  font-size: small;
+  font-weight: 700;
+  color: rgb(103, 103, 103);
+}
+#calendar4 tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar4 tbody td:nth-child(1) {
+  font-size: small;
+  color: rgba(103, 103, 103, .7);
+}
+#calendar4 tbody td:nth-child(n+7), #calendar4 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar4 tbody td.today {
+  outline: 3px solid red;
+}*/

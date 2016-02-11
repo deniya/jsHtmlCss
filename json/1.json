@@ -1,0 +1,123 @@
+
+// 1. Создаём новый объект XMLHttpRequest
+var xhr = new XMLHttpRequest();
+
+// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
+xhr.open('GET', 'phones.json', false);
+
+// 3. Отсылаем запрос
+xhr.send();
+
+// 4. Если код ответа сервера не 200, то это ошибка
+if (xhr.status != 200) {
+  // обработать ошибку
+  alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
+} else {
+  // вывести результат
+  alert( xhr.responseText ); // responseText -- текст ответа.
+}
+
+
+
+
+<script type="text/javascript">
+
+var news = {
+
+  "newsID": 1
+  "contents": [
+    {
+      "Header": "12345",
+
+      "Theme": "321",
+
+      "Date": "121.1215.1561",
+
+      "Author": "Ваня Иванов",
+
+      "Text": "omer"
+    }],
+
+    "newsID": 2
+    "contents":[
+    {
+
+      "Header": "12345",
+
+      "Theme": "321",
+
+      "Date": "121.1215.1561",
+
+      "Author": "Ваня Иванов",
+
+      "Text": "omer"
+
+    }
+  ],
+
+  "newsCompleted": true
+};
+</script>
+
+
+data ={
+  Title: [{
+    id:'1',
+    name:''
+    },
+    {
+    id:'2',
+    name:''
+    }],
+
+  Author: [{
+    id:'1',
+    name:''
+    },
+    {
+    id:'2',
+    name:''
+      }]
+}
+
+
+<script type="text/javascript">
+{
+'data':{
+    'title': [
+        {'id':'1',
+        'name':'Dolor est'},
+        {
+        'id':'2',
+        'name':'Ipsum de'}],
+
+    'author': [
+        {'id':'1',
+        'name':'Eres'},
+        {
+        'id':'2',
+        'name':'Este'}],
+
+    'date': [{
+        {'id':'1',
+        'name':33.32.033},
+        {
+        'id':'2',
+        'name':12.12.2112}],
+
+    'theme': [
+        {'id':'1',
+        'name':'ames erse'},
+        {
+        'id':'2',
+        'name':'elde odd'}],
+
+    'content': [{
+        {'id':'1',
+        'name':'oreh cholocate'},
+        {
+        'id':'2',
+        'name':'musta rdosho'}]
+}
+</script>
+

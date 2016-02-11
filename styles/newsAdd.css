@@ -1,0 +1,70 @@
+.container{
+	position:center;
+	margin:10px auto;
+	color: blue;
+	width: 500px;
+	height: auto;
+	color: darkviolet;
+	background: lightblue;
+	margin-bottom: 20px;
+}
+
+h2{
+	margin-bottom: 30px;
+}
+
+.form-control {
+	height: auto;
+	margin-bottom:0px;
+}
+/*
+.form-control #content #title{
+	height: auto;
+	margin-bottom:0px;
+}
+*/
+.btn{
+	margin-bottom: 20px;
+	border-color:blue;
+	background-color:black;
+	color: yellow;
+}
+
+.invalid{
+	border: 3px solid red;
+}
+
+.invalid:after{
+	content:"This field is required for completion";
+	text-decoration: underline;
+	background:white;
+	margin-left: 1px;
+}
+
+.invalidP{
+	display: block;
+	color: red;
+	text-decoration: bold;
+}
+
+.none-invalid{
+	display: none;
+}
+
+#chooseGender{
+	margin-bottom: 12px;
+}
+
+.footer{
+	text-align: center;
+}
+
+nav{
+	margin-left: 130px;
+		margin-top: 40px;
+
+
+}
+nav a{
+	color: darkred;
+}

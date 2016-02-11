@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Краткая история</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+    <link rel="stylesheet" href="styles/newsAdd.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Add news</h2>
+    <form class="form" name="MyForm" role="form" action="newsList.html" onsubmit="return valid()">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+            <p class="none-invalid" id="invalidTitle">Please enter your news title!</p>
+        </div>
+
+        <div class="form-group">
+          <label for="theme">Theme:</label>
+          <input type="text" class="form-control" id="theme" name="theme" placeholder="Theme">
+          <p class="none-invalid" id="invalidTheme">Please enter your theme!</p>
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author:</label>
+          <textarea class="form-control" id="author" rows="1" name="author" placeholder="Author"></textarea>
+          <p class="none-invalid" id="invalidAuthor">Please enter author name!</p>
+        </div>
+
+        <div class="form-group">
+          <label for="content">Content:</label>
+          <textarea class="form-control" id="content" rows="7" name="content" placeholder="Content"></textarea>
+          <p class="none-invalid" id="invalidContent">Please enter your news content!</p>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="text" class="form-control" id="date" name="date"></textarea>
+          <p class="none-invalid" id="invalidData">Please enter the date!</p>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Choose your gender:</label>
+          <select id="gender" name="gender"></select>
+        </div>
+
+        <!--
+        <label>Gender :</label>
+        <input type="radio" value="Male" id="male" />
+        <label>Male</label>
+        <input type="radio" value="Female" id="female" />
+        <label>Female</label> //-->
+         <!--<form>
+          <p>Publishing date</p>
+          <p><input type="datetime" name="created"></p>
+          <p><input type="submit"></p>
+         </form> //-->
+        <button type="submit" id="submitBtn" class="btn btn-default">Submit</button>
+        <button type="reset" id="resetBtn" class="btn btn-default">Reset</button>
+    </form>
+
+    <div class="sidebar span2">
+        <nav>
+            <ul>
+                <li id="back-to" onclick="return confirm('Are you sure?')"><a href="index.html">Назад на главную</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="footer span12"><small>(c) all rights reserved...якобы</small>
+
+    </div>
+</div>
+
+
+<script src="js/newsAdd.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</body>
+</html>

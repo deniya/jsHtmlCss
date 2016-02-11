@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Page</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+	<link rel="stylesheet" href="styles/Style.css">
+
+	<script language = "JavaScript">
+
+        var bigsize = "250"; //Размер большой картинки
+		var smallsize = "144"; //Размер маленькой картинки
+
+		function changeSizeImage(im) {
+	  	if(im.height == bigsize) im.height = smallsize;
+	  	else im.height = bigsize; 
+	  	align="left";
+
+	  	// align="left" 
+	  	// valign="middle"
+	  	// position:absolute;
+
+	  	// align=center;
+		}
+
+	</script> 
+
+</head>
+<body scroll="no">
+	<div class="container">
+		<div class="row">
+			<header class="span3">
+				<h1>Учебная страница Дениса Васькина</h1>
+			</header>
+			
+			<div class="search span3 offset6"><input type="text" placeholder="Поиск по сайту">
+				<input type="submit" value="Найти">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="slider span12"></div>
+		</div>
+
+		<div class="row">
+			<div class="sidebar span2">
+				<nav>
+					<ul>
+						<li><a href="str1.html">Обо мне</a></li>
+						<li><a href="str2.html">Краткая история</a></li>
+						<li><a href="str3.html">Предпочтения/интересы</a></li>
+						<li><a href="str4.html">Что не по душе</a></li>
+					</ul>
+				</nav>
+			</div>
+		
+			<div class="content span10">
+				<h2>Добро пожаловать на мою страничку.</h2>
+				<p class="abs">На ней вы найдете некоторую информацию обо мне. Страничка находится в стадии разработки.</p>
+			</div>
+		</div>
+<!-- <div class="table"> -->
+		<table align="center">
+			<tr>
+			    <td align="center">
+			      <img src="http://www.friends-torrent.com/torrents/thumbnail/c87fdfb848a7_d573297111b4f431d7d620e4214404bc_400.jpg" height="144" onclick="changeSizeImage(this)">
+			      <br>
+			      <a href="http://www.friends-torrent.com/torrents/thumbnail/c87fdfb848a7_d573297111b4f431d7d620e4214404bc_400.jpg" height=""><b>Фото 1</b>
+			    </td>
+			    <td align="center">
+			      <img src="http://www.desktophdwallpapers.eu/thumbs/hong-kong-t2.jpg" height="144" onclick="changeSizeImage(this)">
+			      <br>
+			      <a href="http://www.desktophdwallpapers.eu/thumbs/hong-kong-t2.jpg"><b>Фото 2</b>
+			    </td>
+			    <td align="center">	
+			      <img src="http://www.bluetail.in/wp-content/uploads/2014/04/pond-400x250.png" height="150" onclick="changeSizeImage(this)">
+			      <br>
+			      <a href="http://www.bluetail.in/wp-content/uploads/2014/04/pond-400x250.png"><b>Фото 3</b>
+			    </td>
+			    <td align="center">
+			      <img src="http://www.instapics.ru/mini/201211/42408.jpg" height="144" onclick="changeSizeImage(this)">
+			      <br>
+			      <a href="http://www.instapics.ru/mini/201211/42408.jpg"><b>Фото 4</b>
+			    </td>
+			</tr>
+		</table>
+<!-- </div> -->
+		<div class="row">
+			<div class="footer span12">
+				<a href="adminNews.html"><small>(c) all rights reserved...якобы</small></a>
+			</div>
+			<!--<button type="submit" id="resetBtn" class="btn btn-default" action="adminNews.html">Admin</button> -->
+		</div>
+		
+	</div><!-- end container-->
+
+</body>
+</html>
+
+
+<!-- 
+nav-ul-li  Back to Main  as white color
+pictures upon zoom -->
